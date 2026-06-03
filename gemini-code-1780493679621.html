@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一章：科學理性 — 越滑越空虛</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>
+        /* Chapter 1 accent: 鋼藍 — 對應 C1 群落，冷靜的演算法色彩 */
+        :root { --accent: #3d8dbf; }
+    </style>
+</head>
+<body>
+
+    <div class="prog-wrap"><div class="prog-bar" id="bar"></div></div>
+    <div class="y2k-grid"></div>
+    <canvas id="bg-canvas"></canvas>
+    <!-- Bridge glow nodes — near top-left and bottom-right margins -->
+    <div class="bridge-node" style="top: 28%; left: 5%;"></div>
+    <div class="bridge-node" style="bottom: 32%; right: 6%;"></div>
+
+    <nav class="site-nav">
+        <a href="index.html">← 返回</a>
+        <span class="nav-sep">/</span>
+        <span class="nav-current">Phase 1 · 科學理性</span>
+    </nav>
+
+    <main class="story-wrap">
+        <!-- Sticky Quote -->
+        <aside class="sticky-col">
+            <div class="sticky-quote">
+                <span class="sq-mark">「</span>
+                <h2 class="sq-text">多巴胺負責讓你想要，卻不保證你得到快樂。演算法不需要讓你快樂，它只需要讓你繼續滑下去。</h2>
+            </div>
+        </aside>
+
+        <!-- Article -->
+        <section class="text-col">
+            <header class="meta-hd">
+                <div class="ch-tag">Phase 1 / Scientific Rationality</div>
+                <h1 class="ch-title">越滑越空虛，為什麼還是停不下來？</h1>
+                <p class="ch-sub">——從「雪山救狐狸」看我們被演算法難的渴望迴路</p>
+            </header>
+
+            <p class="reveal-p">最近，一系列由 AI 生成的短影片在社群平台瘋傳，從「雪山救狐狸」到各種荒謬又獵奇的水影片，這些內容沒有邏輯，也沒有深度，卻總能讓人忍不住看完下一支、再下一支。許多人一邊笑著說：「這到底是什麼東西！」一邊繼續往下滑。</p>
+            <p class="reveal-p">可問題是，為什麼我們明明覺得空洞，卻停不下來？</p>
+            <p class="reveal-p">神經科學或許能提供一個答案！許多人誤以為多巴胺代表快樂，但事實上，多巴胺更接近「渴望」。當大腦預期可能獲得獎勵時，多巴胺便會分泌，驅使我們繼續追尋下一個刺激，真正帶來滿足與愉悅感的，反而是內啡肽等神經傳導物質。</p>
+            <p class="reveal-p">多巴胺負責讓你想要，卻不保證你得到快樂，而短影音平台正是建立在這套機制之上。每一次滑動，都像一次抽獎。你不知道下一支影片是無聊還是精彩，但正因為不確定，大腦反而更容易持續投入。神經科學將這種現象稱為「獎賞預測誤差」：當結果充滿不確定性時，反而最容易刺激渴望。</p>
+            <p class="reveal-p">演算法不需要讓你快樂，只需要讓你繼續滑下去。從商業角度來看，這並非意外，因為對平台而言，注意力就是資源；停留時間越長，廣告曝光越多，數據蒐集越完整，商業價值也越高。AI 生成內容則進一步降低了創作成本，讓平台能以近乎無限的速度生產刺激、填滿使用者的每一分鐘。</p>
+            <p class="reveal-p">於是，人類最珍貴的注意力，被切割成一段又一段的碎片，在演算法設計好的迴路中不斷循環。或許，「雪山救狐狸」真正值得討論的從來不是影片本身，而是它映照出的現實：當技術越來越懂得如何抓住我們的眼球，我們是否也正在失去辨別自己真正想要什麼的能力？當我們把時間花在無止境的滑動裡，得到的可能不是快樂，而只是一次又一次被延長的渴望。而這，或許才是演算法時代最值得警惕的事。</p>
+        </section>
+    </main>
+
+    <footer class="site-footer reveal">
+        <div class="footer-inner">
+            <div class="footer-mark">「</div>
+            <p class="footer-quote">當我們把時間花在無止境的滑動裡，得到的可能不是快樂，而只是一次又一次被延長的渴望。</p>
+            <div class="footer-rule"></div>
+            <p class="footer-attr">第一章 · 科學理性</p>
+        </div>
+    </footer>
+
+    <script src="shared.js"></script>
+    <script>
+        initCanvas('bg-canvas');
+        initProgressBar('bar');
+        initReveal('.reveal');
+        initReveal('.reveal-p');
+    </script>
+</body>
+</html>
