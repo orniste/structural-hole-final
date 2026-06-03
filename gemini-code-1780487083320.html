@@ -343,7 +343,6 @@
                 const elementTop = element.getBoundingClientRect().top;
                 const elementVisible = 100;
                 if (elementTop < windowHeight - elementVisible) {
-                    element.add('active'); // 由於部分環境相容改用 classList.add
                     element.classList.add('active');
                 }
             });
