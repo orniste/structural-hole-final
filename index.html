@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《結構洞 Structural Hole》— 靈光輓歌</title>
+    <link rel="stylesheet" href="shared.css">
+    <style>:root { --accent: var(--gold); }</style>
+</head>
+<body>
+
+    <div class="prog-wrap"><div class="prog-bar" id="bar"></div></div>
+    <div class="y2k-grid"></div>
+    <canvas id="bg-canvas"></canvas>
+    
+    <div class="audio-player-wrap">
+        <button id="music-btn" class="music-toggle" aria-label="Toggle Music">
+            <span class="music-icon">♫</span>
+            <span class="music-status">SOUND OFF</span>
+        </button>
+        <audio id="bgm" src="十万嬉皮 [xLu_r5FWAIo].mp3" loop preload="auto"></audio>
+    </div>
+
+    <div class="bridge-node" style="top: 19%; right: 12%;"></div>
+    <div class="bridge-node" style="bottom: 22%; left: 9%;"></div>
+
+    <div id="app">
+        <section class="hero">
+            <div class="hero-eyebrow">Structural Hole · 第三期</div>
+            <h1 class="hero-title">《結構洞》</h1>
+            <div class="hero-rule"></div>
+            <p class="hero-type"><span id="tw"></span><span class="cursor">|</span></p>
+            <a href="#explore" class="scroll-down">Scroll ↓</a>
+        </section>
+
+        <section class="net-section" id="explore">
+            <header class="net-header reveal">
+                <div class="net-label">本期專題</div>
+                <h2 class="net-heading">技術洪流下的品味重塑</h2>
+                <p class="net-sub">大眾審美被馴化後的「人味」辯駁</p>
+            </header>
+            <div class="net-divider"></div>
+
+            <div class="cards-grid">
+                <a href="chapter1.html" class="node-card reveal" data-speed="2">
+                    <div class="node-badge">第一章 / 科學理性</div>
+                    <h3 class="node-title">越滑越空虛，為什麼還是停不下來？</h3>
+                    <p class="node-body">透視多巴胺與大腦的渴望迴路，拆解演算法如何建立無限循環的隨機獎賞機制，精準閹割人類的資訊自主權。</p>
+                    <div class="node-more">Enter Node →</div>
+                </a>
+                <a href="chapter2.html" class="node-card reveal" data-speed="-1">
+                    <div class="node-badge">第二章 / 經驗感性</div>
+                    <h3 class="node-title">套個模板吧，讓 AI 做吧</h3>
+                    <p class="node-body">我們是如何走向「審美懶惰」的？重新呼喚班雅明的「藝術靈光（Aura）」，在極致高效率的模板化時代展開一場感性抵抗。</p>
+                    <div class="node-more">Enter Node →</div>
+                </a>
+                <a href="chapter3.html" class="node-card reveal" data-speed="3">
+                    <div class="node-badge">第三章 / 生命體驗</div>
+                    <h3 class="node-title">趕著投胎的碳基生物</h3>
+                    <p class="node-body">為什麼「我們會死」是我們對抗 AGI 的唯一武器？在機率分布與精密優化的完美矽基世界裡，捍衛人類「真實崩潰」的隨機奇蹟。</p>
+                    <div class="node-more">Enter Node →</div>
+                </a>
+            </div>
+        </section>
+
+        <footer class="site-footer reveal">
+            <div class="footer-inner">
+                <div class="footer-mark">「</div>
+                <p class="footer-quote">當特定的技術發展在無意中重塑了大部分人的認知習慣，使我們習慣於消費流暢、無瑕且符合概率最優解的產物時，我們該如何站在美學品味的標準上，為創作的本質進行辯駁？</p>
+                <div class="footer-rule"></div>
+                <p class="footer-attr">—— 編輯室 · 《結構洞 Structural Hole》第三期</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="shared.js"></script>
+    <script>
+        initCanvas('bg-canvas');
+        initProgressBar('bar');
+        initReveal('.reveal');
+        initTypewriter('tw', [
+            '靈光輓歌：大眾審美被集體眷養後的抵抗',
+            '在無意識中，我們讓渡了美學主體性',
+            '活得比演算法更難以預測'
+        ]);
+        initParallax('[data-speed]');
+    </script>
+</body>
+</html>
